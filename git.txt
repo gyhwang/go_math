@@ -1,9 +1,13 @@
+// all in the repository directory
+go mod init github.com/gyhwang/go_math // create mod file
 git init
+git remote add <shortname> <url>    // to add a new remote Git repository <url> as a <shortname>
 git remote add origin https://github.com/gyhwang/go_math.git
 git status
 git add -A
 git commit -m "message"
 git push -u -f origin master
 git tag -a v1.0.0 -m "initial release"
+git push <remote> <branch> // push master <branch> to your <remote> server
 git push origin master --tag
 go get github.com/gyhwang/go_math/geometry
