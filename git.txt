@@ -1,0 +1,9 @@
+git init
+git remote add origin https://github.com/gyhwang/go_math.git
+git status
+git add -A
+git commit -m "message"
+git push -u -f origin master
+git tag -a v1.0.0 -m "initial release"
+git push origin master --tag
+go get github.com/gyhwang/go_math/geometry
